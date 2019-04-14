@@ -6,13 +6,18 @@
 		<p class="font-weight-bold">Desenhe um dígito e clique em "Enviar"</p>
 	</div>
 	<div class="row">
-		<div id="canvas-container" class="col-7 text-right">
-			<canvas #canvas></canvas>
+		<div id="canvas-container" class="col-4 text-center">
+			<canvas #canvasBack id="canvasBack"></canvas>
+			<canvas #canvasFront id="canvasFront"></canvas>
 		</div>
 
-		<div class="col-3 text-left my-auto">
+		<div class="col-4 my-auto text-center">
 			<button type="button" class="btn btn-warning btn-lg btn-block" (click)="clearCanvas()">Limpar</button>
 			<button type="button" class="btn btn-success btn-lg btn-block" [disabled]="!drawed" (click)="sendData()">Enviar</button>
+		</div>
+
+		<div id="image-container" class="col-4 text-center">
+			<img #image />
 		</div>
 	</div>
 </div>

@@ -1,3 +1,18 @@
-canvas {
+canvas,
+img {
 	border: 2px #000 solid;
+}
+
+#canvasBack {
+	position: absolute;
+	top: 0;
+	left: calc(50% - 152px);
+	z-index: 110;
+}
+
+#canvasFront {
+	position: absolute;
+	top: 0;
+	left: calc(50% - 152px);
+	z-index: 1;
 }
